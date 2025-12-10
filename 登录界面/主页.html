@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>木柜子信息登记</title>
+    <link rel="stylesheet" href="样式文件.css" type="text/css">
+</head>
+<body>
+    <form>
+        <p>
+            <span>用户名:</span>
+            <input type="text" name="username" class="num" pattern="^[a-zA-Z0-9_]{3,16}$" title="用户名应为3到16位的字母、数字或下划线组合">
+        </p>
+        <p>
+            <span>密码:</span>
+            <input type="password" name="password" class="pass" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" title="密码至少8位，包含字母和数字">
+        </p>
+        <p>
+            <input type="button" class="bth01" value="登录">
+        </p>
+    </form>
+</body>
+</html>
